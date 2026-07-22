@@ -1,0 +1,250 @@
+﻿/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0d6efd !important;
+}
+
+.navbar-nav .nav-link {
+    color: #495057 !important;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 12px;
+    transition: .3s;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #0d6efd !important;
+    }
+
+/* ==========================================
+   AUTH WRAPPER
+========================================== */
+
+.auth-wrapper {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* ==========================================
+   LOGIN CARD
+========================================== */
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 35px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.auth-logo {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.auth-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: #212529;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+    .form-group label {
+        display: block;
+        width: 320px;
+        margin: auto;
+        margin-bottom: 6px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #495057;
+    }
+
+.form-control {
+    display: block;
+    width: 320px;
+    height: 42px;
+    margin: auto;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background: #fff;
+    transition: all .25s ease;
+}
+
+    .form-control:focus {
+        outline: none;
+        border-color: #0d6efd;
+        box-shadow: 0 0 0 3px rgba(13,110,253,.15);
+    }
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn-login,
+.btn-register,
+.btn-submit {
+    width: 320px;
+    height: 42px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+    .btn-login:hover,
+    .btn-register:hover,
+    .btn-submit:hover {
+        background: #0b5ed7;
+    }
+
+/* ==========================================
+   LINKS
+========================================== */
+
+.forgot-link {
+    width: 320px;
+    margin: auto;
+    text-align: right;
+    margin-bottom: 18px;
+}
+
+    .forgot-link a {
+        color: #0d6efd;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+        .forgot-link a:hover {
+            text-decoration: underline;
+        }
+
+.auth-links {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+    .auth-links a {
+        color: #0d6efd;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+        .auth-links a:hover {
+            text-decoration: underline;
+        }
+
+/* ==========================================
+   VALIDATION
+========================================== */
+
+.text-danger {
+    display: block;
+    width: 320px;
+    margin: auto;
+    margin-top: 5px;
+    color: #dc3545;
+    font-size: 13px;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer {
+    background: #fff;
+    border-top: 1px solid #e5e7eb;
+    color: #6c757d;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.auth-card {
+    animation: fadeIn .4s ease;
+}
